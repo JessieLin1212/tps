@@ -1,0 +1,359 @@
+body {
+  height: 2400px;
+}
+
+#head_top {
+  background-color: #F1F1F1;
+  border-bottom: 1px solid #DCDCDC;
+}
+
+#head_top .head_topl > li {
+  float: left;
+  position: relative;
+}
+
+#head_top .head_topl > li a {
+  display: block;
+  width: 80px;
+  height: 37px;
+  line-height: 37px;
+  font-size: 12px;
+  text-align: center;
+  position: relative;
+}
+
+#head_top .head_topl > li a i {
+  font-size: 12px;
+  padding-left: 3px;
+  color: #858585;
+}
+
+#head_top .head_topl > li a.country {
+  padding-left: 6px;
+}
+
+#head_top .head_topl > li a.country .country_i {
+  width: 16px;
+  height: 10px;
+  display: block;
+  background: url("../img/ico-country.png") 0 -11px;
+  position: absolute;
+  top: 13px;
+  left: 0px;
+}
+
+#head_top .head_topl > li .country_nav {
+  display: none;
+  width: 92px;
+  border: 1px solid #DFDFDF;
+  border-top: 0 none;
+  background-color: #FFFFFF;
+  position: absolute;
+  left: -1px;
+  top: 37px;
+}
+
+#head_top .head_topl > li .country_nav a {
+  display: block;
+  height: 28px;
+  margin-left: 13px;
+  line-height: 28px;
+  font-size: 12px;
+  text-align: center;
+  position: relative;
+}
+
+#head_top .head_topl > li .country_nav a i {
+  width: 16px;
+  height: 10px;
+  display: block;
+  background: url("../img/ico-country.png") 0 0;
+  position: absolute;
+  top: 9px;
+  left: 0px;
+}
+
+#head_top .head_topl > li:hover {
+  background-color: #FFFFFF;
+}
+
+#head_top .head_topl > li:hover .country_nav {
+  display: block;
+}
+
+#head_top .head_topl > li .h_money {
+  width: 98px;
+  display: none;
+  border: 1px solid #DFDFDF;
+  border-top: 0 none;
+  background-color: #FFFFFF;
+  position: absolute;
+  left: -1px;
+  top: 37px;
+}
+
+#head_top .head_topl > li .h_money a {
+  display: block;
+  height: 28px;
+  margin-left: 5px;
+  line-height: 28px;
+  font-size: 12px;
+  text-align: center;
+}
+
+#head_top .head_topl > li:hover .h_money {
+  display: block;
+}
+
+#head_top .head_topr > li {
+  float: left;
+  position: relative;
+}
+
+#head_top .head_topr > li a {
+  display: block;
+  height: 37px;
+  line-height: 37px;
+  padding-right: 12px;
+  font-size: 12px;
+  text-align: center;
+  position: relative;
+}
+
+#head_top .head_topr > li a span {
+  color: #F54248;
+}
+
+#head_top .head_topr > li a .login_t {
+  border-right: 1px solid #A86868;
+  padding-right: 15px;
+  padding-left: 10px;
+}
+
+#head_top .head_topr > li a i {
+  font-size: 8px;
+  color: #858585;
+  position: absolute;
+  top: 0px;
+  left: 48px;
+}
+
+#head_top .head_topr > li a i.icon-shouji {
+  font-size: 22px;
+  left: -26px;
+}
+
+#head_top .head_topr > li div {
+  display: none;
+  position: absolute;
+  left: -24px;
+}
+
+#head_top .head_topr > li.erweima:hover > div {
+  display: block;
+}
+
+#head_top .head_topr > li:hover span {
+  text-decoration: underline;
+}
+
+#head_top .head_topr > li.t_gr_center:hover {
+  background-color: #FFFFFF;
+}
+
+#head_top .head_topr > li .h_dingdan {
+  width: 98px;
+  display: none;
+  border: 1px solid #DFDFDF;
+  border-top: 0 none;
+  background-color: #FFFFFF;
+  position: absolute;
+  left: -1px;
+  top: 37px;
+  z-index: 10;
+}
+
+#head_top .head_topr > li .h_dingdan a {
+  display: block;
+  height: 28px;
+  margin-left: 5px;
+  line-height: 28px;
+  font-size: 12px;
+  text-align: center;
+}
+
+#head_top .head_topr > li.t_gr_center:hover .h_dingdan {
+  display: block;
+}
+
+#head_bottom {
+  background: #FFFFFF;
+}
+
+#head_bottom .h_logo {
+  float: left;
+  width: 248px;
+  height: 156px;
+}
+
+#head_bottom .head_bottom_c {
+  float: left;
+  width: 678px;
+  padding-left: 168px;
+}
+
+#head_bottom .head_bottom_c .h_search_t input[type=text] {
+  float: left;
+  width: 460px;
+  height: 44px;
+  margin: 0;
+  margin-top: 50px;
+  border: 2px solid #163671;
+  padding-left: 12px;
+  font-size: 12px;
+  color: #908277;
+  line-height: 44px;
+}
+
+#head_bottom .head_bottom_c .h_search_t button {
+  float: left;
+  width: 50px;
+  height: 44px;
+  margin-top: 50px;
+  background: #163671;
+}
+
+#head_bottom .head_bottom_c .h_search_t button i {
+  text-align: center;
+  font-size: 28px;
+  line-height: 44px;
+  color: #F9FFFD;
+}
+
+#head_bottom .head_bottom_c .h_suoyin {
+  height: 62px;
+  padding-top: 8px;
+}
+
+#head_bottom .head_bottom_c .h_suoyin li {
+  float: left;
+}
+
+#head_bottom .head_bottom_c .h_suoyin li a {
+  display: block;
+  font-size: 12px;
+}
+
+#head_bottom .head_bottom_c .h_suoyin li a span {
+  border-right: 1px solid #7779A2;
+  padding: 0 8px;
+  color: #6A6260;
+}
+
+#head_bottom .head_bottom_r {
+  float: right;
+  height: 44px;
+  line-height: 44px;
+  margin-top: 50px;
+  background: #ECECEC;
+  position: relative;
+}
+
+#head_bottom .head_bottom_r i {
+  display: inline-block;
+  width: 37px;
+  height: 36px;
+  margin: 4px;
+  font-size: 26px;
+  line-height: 36px;
+  text-align: center;
+  background: #FFFFFF;
+}
+
+#head_bottom .head_bottom_r .h_qty {
+  display: block;
+  width: 16px;
+  height: 16px;
+  line-height: 16px;
+  border-radius: 50%;
+  position: absolute;
+  color: #FFF;
+  background-color: #E24639;
+  font-size: 14px;
+  top: -6px;
+  left: 14px;
+  text-align: center;
+}
+
+#head_bottom .head_bottom_r p {
+  float: right;
+  display: inline-block;
+  width: 80px;
+  height: 44px;
+  line-height: 44px;
+  font-size: 16px;
+  text-align: center;
+}
+
+#nav {
+  background: #58bc58;
+  border-bottom: 2px solid #163671;
+}
+
+#nav .fenlei {
+  position: relative;
+  float: left;
+  cursor: pointer;
+}
+
+#nav .fenlei h3 {
+  width: 160px;
+  height: 45px;
+  line-height: 45px;
+  font-size: 14px;
+  font-weight: 500;
+  padding-left: 26px;
+  color: #fff;
+  background: #163672;
+  text-align: center;
+}
+
+#nav .fenlei i {
+  font-size: 20px;
+  position: absolute;
+  top: 14px;
+  left: 25px;
+  color: #fff;
+}
+
+#nav .sc_nav > li {
+  float: left;
+  position: relative;
+}
+
+#nav .sc_nav > li a {
+  display: block;
+  height: 45px;
+  padding: 0 20px;
+  font-size: 14px;
+  line-height: 45px;
+}
+
+#nav .sc_nav > li a span {
+  position: absolute;
+  top: -22px;
+  left: 28px;
+}
+
+#nav .sc_nav > li ul {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+#nav .sc_nav > li ul a {
+  height: 45px;
+  line-height: 45px;
+  padding: 0 20px;
+  text-align: center;
+  display: block;
+  font-size: 14px;
+}

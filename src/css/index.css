@@ -1,0 +1,17 @@
+#box {
+  width: 200px;
+  height: 600px;
+}
+
+#box div {
+  background: #000;
+}
+
+#box div.left {
+  width: 20px;
+  height: 30px;
+}
+
+#box .right {
+  background: #ddd;
+}
