@@ -1,0 +1,50 @@
+#footer {
+  background: #eee;
+  color: #999;
+}
+
+#footer .footer_l {
+  width: 572px;
+  float: left;
+}
+
+#footer .footer_l li {
+  padding-top: 20px;
+}
+
+#footer .footer_l li a {
+  display: inline-block;
+  font-size: 12px;
+  margin-right: 20px;
+}
+
+#footer .footer_l li p {
+  height: 22px;
+  line-height: 22px;
+  padding: 5px 0 10px;
+}
+
+#footer .footer_l li p.gongan {
+  margin: 5px 0 20px;
+}
+
+#footer .footer_c {
+  float: left;
+  padding-left: 60px;
+}
+
+#footer .footer_c p {
+  padding: 15px 0;
+}
+
+#footer .footer_r {
+  width: 160px;
+  background: #e65050;
+  text-align: center;
+  padding: 30px 0 22px;
+}
+
+#footer .footer_r p {
+  color: #eee;
+  padding-top: 14px;
+}
