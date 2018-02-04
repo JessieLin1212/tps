@@ -1,5 +1,4 @@
-
-body{height: 2400px;}
+// body{height: 2400px;}
 
 #head_top{
     background-color: #F1F1F1;
@@ -279,7 +278,7 @@ body{height: 2400px;}
 
 #nav{
     // height: 45px;
-    background: #58bc58;
+    // background: #58bc58;
     border-bottom: 2px solid #163671;
     .fenlei{
         position: relative;
@@ -303,6 +302,84 @@ body{height: 2400px;}
             left: 25px;
             color: #fff;
         }
+        .erjinav{
+            width: 160px;
+            background-color: rgba(22,54,114,.9);
+            position: absolute;
+            top:46px;
+            left:0px;
+            z-index: 10;
+            display: none;
+            >li{
+                >a{
+                    line-height: 40px;
+                    display: block;
+                    font-size: 14px;
+                    text-align: center;
+                    color: #f2f2f2;
+                }
+                .sanjinav{
+                    width: 1000px;
+                    // height: 520px;
+                    background: #FFFFFF;
+                    position: absolute;
+                    padding-bottom: 180px;
+                    top:0px;
+                    left:160px;
+                    z-index: 10;
+                    display: none;
+                    >li{
+                        border-bottom: 1px dashed #DDDDDD;
+                        // height: 40px;
+                        &:after{
+                            content:"";
+                            display:block;
+                            height:0;
+                            clear:both;
+                            overflow:hidden;
+                            visibility:hidden;
+                            zoom:1;
+                        }
+                        p{
+                            // display: inline-block;
+                            float: left;
+                            width: 80px;
+                            // height: 40px;
+                            line-height: 40px;
+                            font-size: 14px;
+                            font-weight: 600;
+                            margin-left: 18px;
+                            margin-right: 20px;
+                            // text-align: center;
+                            white-space: nowrap;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                        }
+                        >a{
+                            float: left;
+                            height: 16px;
+                            line-height: 16px;
+                            padding: 0 8px;
+                            border-right: 1px solid #e0e0e0;
+                            margin-top: 12px;
+                            margin-right: 2px;
+                        }
+                    }
+                }
+                &:hover{
+                    background: #FFFFFF;
+                }
+                &:hover>a{
+                    color: #333333;
+                }
+                &:hover .sanjinav{
+                    display: block;
+                }
+            }
+        }
+        &:hover .erjinav{
+            display: block;
+        }
     }
     .sc_nav{
         // width: 830px;
@@ -324,8 +401,12 @@ body{height: 2400px;}
                 }
             }
             ul{
-                // width: 110px;
-                background-color: rgba(255,255,255,0.5);
+                width: 100px;
+                display: none;
+                background-color: rgba(255,255,255,0.7);
+                position: absolute;
+                top:45px;
+                left:0px;
                 a{
                     height: 45px;
                     line-height: 45px;
@@ -335,6 +416,9 @@ body{height: 2400px;}
                     font-size: 14px;
 
                 }
+            }
+            &:hover ul{
+                display: block;
             }
         }
 
