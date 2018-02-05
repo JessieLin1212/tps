@@ -1,0 +1,109 @@
+#login {
+  height: 600px;
+  background: url("../img/reg_bg.gif") no-repeat center;
+  position: relative;
+}
+
+#login .container {
+  height: 600px;
+}
+
+#login .login_box {
+  width: 380px;
+  position: absolute;
+  top: 50px;
+  right: 3%;
+  padding: 26px 35px;
+  background: #fff;
+}
+
+#login h3 {
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  color: #999;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+#login .login_user {
+  margin-top: 25px;
+}
+
+#login .login_user .login_form ul li {
+  margin-bottom: 10px;
+  position: relative;
+}
+
+#login .login_user .login_form ul li #userName, #login .login_user .login_form ul li #login_psd, #login .login_user .login_form ul li #code {
+  width: 300px;
+  height: 40px;
+  padding-left: 30px;
+  border: 1px solid #e5e5e5;
+  border-radius: 6px;
+  font-size: 14px;
+  color: #999;
+}
+
+#login .login_user .login_form ul li i {
+  position: absolute;
+  top: 11px;
+  left: 6px;
+  font-size: 18px;
+  color: #2D3832;
+}
+
+#login .login_user .login_form ul li .tishi {
+  text-align: left;
+  color: #d22215;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+#login .login_user .login_form ul li #code {
+  width: 160px;
+  float: left;
+  margin-right: 20px;
+}
+
+#login .login_user .login_form ul li span {
+  display: inline-block;
+  width: 120px;
+  height: 40px;
+  line-height: 40px;
+  border: 1px solid #e5e5e5;
+  color: #2D3832;
+  font-size: 30px;
+  text-align: center;
+  letter-spacing: 5px;
+  cursor: pointer;
+}
+
+#login .login_user .login_form ul li .login_button {
+  width: 310px;
+  height: 45px;
+  line-height: 45px;
+  border-radius: 6px;
+  background: #d22215;
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+#login .login_user .login_form ul li .go_dl {
+  margin-top: 10px;
+}
+
+#login .login_user .login_form ul li .go_dl a {
+  margin-left: 2px;
+  color: #38f;
+}
+
+#login .login_user .login_form ul li .go_dl a:last-child {
+  float: right;
+}
+
+#login .login_user .login_form ul li .go_dl a:hover {
+  text-decoration: underline;
+}
