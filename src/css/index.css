@@ -24,11 +24,6 @@
   background-size: cover;
 }
 
-.tps #xinpin .container {
-  height: 880px;
-  background: #ddd;
-}
-
 .tps #xinpin .xinpin_box {
   padding-top: 52px;
 }
@@ -67,4 +62,242 @@
 
 .tps #xinpin .xinpin_box .xinpin_t > a:hover {
   text-decoration: underline;
+}
+
+.tps #xinpin .xinpin_box .xinpin_b {
+  width: 1196px;
+  margin: 0 auto;
+  border-left: 1px solid #ddd;
+  border-top: 1px solid #ddd;
+}
+
+.tps #xinpin .xinpin_box .xinpin_b > li {
+  width: 239px;
+  height: 260px;
+  float: left;
+  overflow: hidden;
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  position: relative;
+}
+
+.tps #xinpin .xinpin_box .xinpin_b > li a {
+  display: block;
+  color: #333;
+}
+
+.tps #xinpin .xinpin_box .xinpin_b > li a .xinpin_icon {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #ffc41f;
+}
+
+.tps #xinpin .xinpin_box .xinpin_b > li a .xinpin_icon i {
+  display: block;
+  font-size: 20px;
+  color: #fff;
+  margin-top: 6px;
+  margin-left: 4px;
+}
+
+.tps #xinpin .xinpin_box .xinpin_b > li a .icon2 {
+  background: #333157;
+  top: 48px;
+  right: 10px;
+}
+
+.tps #xinpin .xinpin_box .xinpin_b > li a .img_box {
+  width: 238px;
+  height: 180px;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.tps #xinpin .xinpin_box .xinpin_b > li a .img_box img {
+  width: 160px;
+  height: 160px;
+}
+
+.tps #xinpin .xinpin_box .xinpin_b > li a .xinpin_neirong {
+  padding: 2px 10px 0;
+  text-align: center;
+  margin: 0px auto;
+}
+
+.tps #xinpin .xinpin_box .xinpin_b > li a .xinpin_neirong h3 {
+  height: 40px;
+  line-height: 23px;
+  font-size: 14px;
+  color: #555;
+  overflow: hidden;
+}
+
+.tps #xinpin .xinpin_box .xinpin_b > li a .xinpin_neirong .xinpin_price {
+  height: auto;
+  color: #ed4242;
+  margin: 13px 0 9px 0;
+  font-size: 18px;
+}
+
+.tps #xinpin .xinpin_box .xinpin_b > li a .xinpin_neirong .xinpin_guojia {
+  padding-left: 78px;
+  text-align: left;
+  height: 20px;
+  color: #999;
+  position: relative;
+}
+
+.tps #xinpin .xinpin_box .xinpin_b > li a .xinpin_neirong .xinpin_guojia i {
+  display: block;
+  width: 16px;
+  height: 10px;
+  background: url("../img/ico-country.png") no-repeat 0 -11px;
+  position: absolute;
+  top: 4px;
+  right: 40%;
+}
+
+.tps #remai .remai_box {
+  padding-top: 52px;
+}
+
+.tps #remai .remai_box .remai_t {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.tps #remai .remai_box .remai_t h3 {
+  height: 37px;
+  line-height: 37px;
+  display: inline-block;
+  font-size: 25px;
+  color: #333;
+}
+
+.tps #remai .remai_box .remai_t > p {
+  display: inline-block;
+  font-size: 20px;
+  margin: 0 8px;
+  color: #333;
+}
+
+.tps #remai .remai_box .remai_t > span {
+  font-size: 14px;
+}
+
+.tps #remai .remai_box .remai_t > a {
+  display: block;
+  float: right;
+  font-size: 14px;
+  margin-top: 12px;
+  color: #666;
+}
+
+.tps #remai .remai_box .remai_t > a:hover {
+  text-decoration: underline;
+}
+
+.tps #remai .remai_box .remai_b {
+  width: 1198px;
+  margin: 0 auto;
+  border-left: 1px solid #ddd;
+  border-top: 1px solid #ddd;
+}
+
+.tps #remai .remai_box .remai_b > li {
+  width: 399px;
+  float: left;
+  padding: 10px 0;
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  position: relative;
+}
+
+.tps #remai .remai_box .remai_b > li a {
+  display: block;
+  padding-top: 19px;
+  color: #333;
+}
+
+.tps #remai .remai_box .remai_b > li a .remai_icon {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #ed4242;
+}
+
+.tps #remai .remai_box .remai_b > li a .remai_icon i {
+  display: block;
+  font-size: 20px;
+  color: #fff;
+  margin-top: 6px;
+  margin-left: 4px;
+}
+
+.tps #remai .remai_box .remai_b > li a .icon2 {
+  background: #333157;
+  top: 48px;
+}
+
+.tps #remai .remai_box .remai_b > li a .img_box {
+  width: 180px;
+  height: 140px;
+  display: table-cell;
+  float: left;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.tps #remai .remai_box .remai_b > li a .img_box img {
+  width: 120px;
+  height: 120px;
+}
+
+.tps #remai .remai_box .remai_b > li a .remai_neirong {
+  float: left;
+  width: 186px;
+  text-align: left;
+  margin-top: -8px;
+  padding: 0 6px;
+}
+
+.tps #remai .remai_box .remai_b > li a .remai_neirong h3 {
+  height: 40px;
+  line-height: 22px;
+  font-size: 14px;
+  color: #555;
+  overflow: hidden;
+}
+
+.tps #remai .remai_box .remai_b > li a .remai_neirong .remai_price {
+  height: auto;
+  color: #ed4242;
+  margin: 20px 0 11px 0;
+  font-size: 18px;
+}
+
+.tps #remai .remai_box .remai_b > li a .remai_neirong .remai_guojia {
+  text-align: left;
+  height: 20px;
+  color: #999;
+  position: relative;
+}
+
+.tps #remai .remai_box .remai_b > li a .remai_neirong .remai_guojia i {
+  display: block;
+  width: 16px;
+  height: 11px;
+  background: url("../img/ico-country.png") no-repeat 0 -11px;
+  border: 1px solid #ddd;
+  position: absolute;
+  top: 4px;
+  left: 38px;
 }
