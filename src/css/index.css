@@ -350,8 +350,219 @@
   display: block;
   width: 157px;
   height: 157px;
+  border-radius: 50%;
   background: url("../img/quanqiugou.png") no-repeat 0 0;
   margin: 0 auto;
   position: relative;
   top: 0px;
+}
+
+.tps #shipin {
+  padding: 50px;
+}
+
+.tps #shipin .shipin_top {
+  margin-bottom: 20px;
+  text-align: center;
+  position: relative;
+}
+
+.tps #shipin .shipin_top h2 {
+  height: 36px;
+  line-height: 36px;
+  font-size: 25px;
+  font-weight: 600;
+  color: #333;
+}
+
+.tps #shipin .shipin_top p {
+  margin-top: 10px;
+  color: #999;
+}
+
+.tps #shipin .shipin_top p a {
+  display: inline-block;
+  padding: 3px 8px;
+  margin: 0 8px;
+  line-height: 16px;
+}
+
+.tps #shipin .shipin_top a.shipin_more {
+  position: absolute;
+  bottom: 2px;
+  right: 0;
+  margin-right: 3px;
+}
+
+.tps #shipin .shipin_c {
+  width: 1196px;
+  height: 350px;
+  margin: 0 auto;
+  overflow: hidden;
+  border: 1px solid #ddd;
+  border-bottom: 0 none;
+}
+
+.tps #shipin .shipin_c .shipin_nav {
+  width: 240px;
+  float: left;
+}
+
+.tps #shipin .shipin_c .shipin_nav ul {
+  height: 156px;
+  padding: 10px;
+  overflow: hidden;
+}
+
+.tps #shipin .shipin_c .shipin_nav ul li {
+  width: 50%;
+  float: left;
+}
+
+.tps #shipin .shipin_c .shipin_nav ul li a {
+  display: block;
+  padding: 0 10px;
+  text-align: center;
+  line-height: 30px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.tps #shipin .shipin_c .shipin_banner {
+  width: 721px;
+  float: left;
+  border-right: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+}
+
+.tps #shipin .shipin_c .shipin_banner .sp_banner_box {
+  width: 719px;
+  overflow: hidden;
+}
+
+.tps #shipin .shipin_c .shipin_banner .sp_banner_box ul li {
+  float: left;
+  width: 719px;
+}
+
+.tps #shipin .shipin_c .shipin_banner .sp_banner_box ul li img {
+  width: 719px;
+  height: 349px;
+}
+
+.tps #shipin .shipin_c .shipin_shangjia {
+  height: 350px;
+  float: left;
+}
+
+.tps #shipin .shipin_c .shipin_shangjia ul {
+  width: 235px;
+}
+
+.tps #shipin .shipin_c .shipin_shangjia ul li a {
+  display: block;
+  width: 200px;
+  height: 66px;
+  margin: 10px 0 0 20px;
+  border-bottom: 1px dotted #ddd;
+  text-align: center;
+}
+
+.tps #shipin .shipin_b .xinpin_b {
+  width: 1196px;
+  margin: 0 auto;
+  border-left: 1px solid #ddd;
+  border-top: 1px solid #ddd;
+}
+
+.tps #shipin .shipin_b .xinpin_b > li {
+  width: 239px;
+  height: 260px;
+  float: left;
+  overflow: hidden;
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  position: relative;
+}
+
+.tps #shipin .shipin_b .xinpin_b > li a {
+  display: block;
+  color: #333;
+}
+
+.tps #shipin .shipin_b .xinpin_b > li a .xinpin_icon {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #ffc41f;
+}
+
+.tps #shipin .shipin_b .xinpin_b > li a .xinpin_icon i {
+  display: block;
+  font-size: 20px;
+  color: #fff;
+  margin-top: 6px;
+  margin-left: 4px;
+}
+
+.tps #shipin .shipin_b .xinpin_b > li a .icon2 {
+  background: #333157;
+  top: 48px;
+  right: 10px;
+}
+
+.tps #shipin .shipin_b .xinpin_b > li a .img_box {
+  width: 238px;
+  height: 180px;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.tps #shipin .shipin_b .xinpin_b > li a .img_box img {
+  width: 160px;
+  height: 160px;
+}
+
+.tps #shipin .shipin_b .xinpin_b > li a .xinpin_neirong {
+  padding: 2px 10px 0;
+  text-align: center;
+  margin: 0px auto;
+}
+
+.tps #shipin .shipin_b .xinpin_b > li a .xinpin_neirong h3 {
+  height: 40px;
+  line-height: 23px;
+  font-size: 14px;
+  color: #555;
+  overflow: hidden;
+}
+
+.tps #shipin .shipin_b .xinpin_b > li a .xinpin_neirong .xinpin_price {
+  height: auto;
+  color: #ed4242;
+  margin: 13px 0 9px 0;
+  font-size: 18px;
+}
+
+.tps #shipin .shipin_b .xinpin_b > li a .xinpin_neirong .xinpin_guojia {
+  padding-left: 78px;
+  text-align: left;
+  height: 20px;
+  color: #999;
+  position: relative;
+}
+
+.tps #shipin .shipin_b .xinpin_b > li a .xinpin_neirong .xinpin_guojia i {
+  display: block;
+  width: 16px;
+  height: 10px;
+  background: url("../img/ico-country.png") no-repeat 0 -11px;
+  position: absolute;
+  top: 4px;
+  right: 40%;
 }
