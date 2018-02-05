@@ -44,7 +44,7 @@
 .tps #xinpin .xinpin_box .xinpin_t > p {
   display: inline-block;
   font-size: 20px;
-  margin: 0 8px;
+  margin: 0 10px;
   color: #333;
 }
 
@@ -182,7 +182,7 @@
 .tps #remai .remai_box .remai_t > p {
   display: inline-block;
   font-size: 20px;
-  margin: 0 8px;
+  margin: 0 10px;
   color: #333;
 }
 
@@ -300,4 +300,58 @@
   position: absolute;
   top: 4px;
   left: 38px;
+}
+
+.tps #quanqiugou {
+  padding-top: 52px;
+}
+
+.tps #quanqiugou .quanqiugou_box {
+  padding-top: 52px;
+}
+
+.tps #quanqiugou .quanqiugou_box .quanqiugou_t {
+  text-align: center;
+}
+
+.tps #quanqiugou .quanqiugou_box .quanqiugou_t h3 {
+  height: 37px;
+  line-height: 37px;
+  display: inline-block;
+  font-size: 25px;
+  color: #333;
+}
+
+.tps #quanqiugou .quanqiugou_box .quanqiugou_t > p {
+  display: inline-block;
+  font-size: 20px;
+  margin: 0 10px;
+  color: #333;
+}
+
+.tps #quanqiugou .quanqiugou_box .quanqiugou_t > span {
+  font-size: 14px;
+}
+
+.tps #quanqiugou .quanqiugou_box .quanqiugou_b {
+  margin: 60px 20px 0;
+}
+
+.tps #quanqiugou .quanqiugou_box .quanqiugou_b li {
+  float: left;
+  width: 25%;
+}
+
+.tps #quanqiugou .quanqiugou_box .quanqiugou_b li.li_row2 {
+  margin-top: 70px;
+}
+
+.tps #quanqiugou .quanqiugou_box .quanqiugou_b li a {
+  display: block;
+  width: 157px;
+  height: 157px;
+  background: url("../img/quanqiugou.png") no-repeat 0 0;
+  margin: 0 auto;
+  position: relative;
+  top: 0px;
 }
