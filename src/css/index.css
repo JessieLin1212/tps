@@ -1,17 +1,70 @@
-#box {
-  width: 200px;
-  height: 600px;
+.tps {
+  height: 16000px;
 }
 
-#box div {
-  background: #000;
+.tps #banner {
+  width: 100%;
+  height: 450px;
 }
 
-#box div.left {
-  width: 20px;
-  height: 30px;
+.tps #banner .banner_box {
+  width: 100%;
+  height: 450px;
 }
 
-#box .right {
+.tps #banner .banner_box ul {
+  width: 100%;
+  height: 450px;
+}
+
+.tps #banner .banner_box ul li {
+  width: 100%;
+  height: 450px;
+  background: url("../img/banner1.jpg") center center no-repeat #950a0d;
+  background-size: cover;
+}
+
+.tps #xinpin .container {
+  height: 880px;
   background: #ddd;
+}
+
+.tps #xinpin .xinpin_box {
+  padding-top: 52px;
+}
+
+.tps #xinpin .xinpin_box .xinpin_t {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.tps #xinpin .xinpin_box .xinpin_t h3 {
+  height: 37px;
+  line-height: 37px;
+  display: inline-block;
+  font-size: 25px;
+  color: #333;
+}
+
+.tps #xinpin .xinpin_box .xinpin_t > p {
+  display: inline-block;
+  font-size: 20px;
+  margin: 0 8px;
+  color: #333;
+}
+
+.tps #xinpin .xinpin_box .xinpin_t > span {
+  font-size: 14px;
+}
+
+.tps #xinpin .xinpin_box .xinpin_t > a {
+  display: block;
+  float: right;
+  font-size: 14px;
+  margin-top: 12px;
+  color: #666;
+}
+
+.tps #xinpin .xinpin_box .xinpin_t > a:hover {
+  text-decoration: underline;
 }
