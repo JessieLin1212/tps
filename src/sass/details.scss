@@ -241,16 +241,173 @@
                 ul{
                     li{
                         margin: 0 10px 6px;
+                        padding-bottom: 3px;
+                        border-bottom: 1px solid #ddd;
                         a{
                             display: block;
+                            line-height: 28px;
+                            font-size: 12px;
                         }
-                        &:first-child{
+                        :first-child{
                             font-weight: bold;
                             font-size: 14px;
+                            line-height: 33px;
                         }
                     }
                 }
             }
+            .details_img{
+                float: left;
+                width: 800px;
+                padding-top: 10px;
+                overflow: hidden;
+                img{
+                    width: 800px;
+                }
+                p{
+                    height: 31px;
+                    padding: 15px 0;
+                    margin: 0 10px 10px;
+                    border-bottom: 1px dotted #eee;
+                }
+            }
+            .details_tuijian{
+                width: 190px;
+                float: right;
+                text-align: center;
+                h3{
+                    height: 43px;
+                    color: #333;
+                    margin: 0 10px 2px;
+                    font-size: 14px;
+                    border-bottom: 1px solid #ddd;
+                    line-height: 43px;
+                    font-weight: bold;
+                }
+                ul{
+                    li{
+                        overflow: hidden;
+                        text-align: center;
+                        >a{
+                            display: block;
+                            width: 190px;
+                            height: 234px;
+                            vertical-align:middle;
+                            text-align: center;
+                            padding: 22px 0;
+                            img{
+                                width: 190px;
+                                height: 190px;
+                            }
+                        }
+                        .details_xiangqi{
+                            height: 61px;
+                            padding: 10px 0;
+                            margin: 0 10px;
+                            text-align: left;
+                            font-size: 12px;
+                            border-bottom: 1px solid #ddd;
+                            .details_jieshao{
+                                width: 75%;
+                                float: left;
+                                p{
+                                    height: 20px;
+                                    white-space:nowrap;
+                                    overflow: hidden;
+                                    text-overflow: ellipsis;
+                                    a{
+                                        // color: #777;
+                                    }
+                                    &.details_tj_price{
+                                        color: #ee4242;
+                                        padding-top: 3px;
+                                    }
+                                }
+                            }
+                            .details_guojia{
+                                width: 22%;
+                                margin-right: 2px;
+                                text-align: right;
+                                font-size: 12px;
+                                float: right;
+                                i{
+                                    display: block;
+                                    width: 18px;
+                                    height: 12px;
+                                    background: url("../img/ico-country.png") no-repeat 0 -11px;
+                                    margin-top: 2px;
+                                    margin-left: 24px;
+                                    border: 1px solid #ccc;
+                                }
+                                p{
+                                    width: 42px;
+                                    height: 20px;
+                                    color: #bbb;
+                                    margin-top: 8px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #to_top{
+        width: 30px;
+        height: 30px;
+        position: fixed;
+        top: 82%;
+        right: 0.2%;
+        background: rgba(7,7,7,.5);
+        border-radius:6px;
+        text-align: center;
+        cursor: pointer;
+        i{
+            display: inline-block;
+            font-size: 22px;
+            color: #fff;
+            margin-top: 7px;
+        }
+        &:hover{
+            background: rgba(255,0,0,.8);
+        }
+    }
+
+    .zxkefu{
+        width: 140px;
+        height: 38px;
+        position: fixed;
+        top: 36%;
+        right: 0.2%;
+        cursor: pointer;
+        i{
+            display: inline-block;
+            width: 1em;
+            height: 1em;
+            line-height: 1em;
+            font-size: 48px;
+            color: #1DA285;
+            position: absolute;
+            border-radius:52px;
+            top:-4px;
+            left: 32px;
+            background: rgba(255,255,255,.9);
+        }
+        span{
+            display: inline-block;
+            float: right;
+            width: 80px;
+            height: 38px;
+            line-height: 34px;
+            text-align: right;
+            padding-right: 5px;
+            font-size: 12px;
+            border: 2px solid #FFBC0C;
+            border-radius:8px;
+        }
+        &:hover span{
+            background: #FFBC0C;
         }
     }
 }
