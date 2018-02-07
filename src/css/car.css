@@ -61,10 +61,6 @@
   text-align: center;
 }
 
-#car .myCar .car_list ul {
-  min-height: 160px;
-}
-
 #car .myCar .car_list ul li {
   border-bottom: solid 1px #ccc;
   padding-left: 34px;
@@ -177,10 +173,14 @@
   font-size: 19px;
 }
 
+#car .myCar .car_list ul li.car_item_li .del_item span:hover {
+  opacity: .9;
+}
+
 #car .myCar .car_list .item_anniu {
-  height: 40px;
-  line-height: 40px;
-  border-bottom: solid 1px #ccc;
+  height: 42px;
+  line-height: 42px;
+  border-bottom: 1px dotted #ccc;
   padding-left: 34px;
   padding-right: 10px;
 }
@@ -189,11 +189,48 @@
   display: inline-block;
 }
 
-c
-#car .myCar .car_list .item_anniu span.car_list_name {
-  padding-left: 20px;
+#car .myCar .car_list .item_anniu span.car_list_del, #car .myCar .car_list .item_anniu span.car_list_gz {
+  cursor: pointer;
 }
 
-#car .myCar .car_list .item_anniu span.car_list_sx, #car .myCar .car_list .item_anniu span.car_list_cz, #car .myCar .car_list .item_anniu span.car_list_dj, #car .myCar .car_list .item_anniu span.car_list_qty, #car .myCar .car_list .item_anniu span.car_list_xj {
-  text-align: center;
+#car .myCar .car_list .item_anniu span.car_list_del:hover, #car .myCar .car_list .item_anniu span.car_list_gz:hover {
+  color: #E65051;
+}
+
+#car .myCar .car_list .item_anniu span.car_list_gz {
+  padding-left: 15px;
+}
+
+#car .myCar .car_list .jiesuan_box {
+  padding: 10px;
+  border-bottom: dotted 1px #ccc;
+}
+
+#car .myCar .car_list .jiesuan_box .jiesuan {
+  height: 174px;
+  padding: 30px 20px;
+  background: #fdfbf2;
+  line-height: 1.8em;
+}
+
+#car .myCar .car_list .jiesuan_box .jiesuan p {
+  text-align: right;
+  padding-bottom: 3px;
+}
+
+#car .myCar .car_list .jiesuan_box .jiesuan p.all_price {
+  color: #ff2f00;
+  font-weight: bold;
+  font-size: 16px;
+  padding-bottom: 10px;
+}
+
+#car .myCar .car_list .jiesuan_box .jiesuan .pay {
+  float: right;
+  background: #e61000;
+  color: #fff;
+  font-weight: bold;
+  padding: .8% 4%;
+  font-size: 14px;
+  cursor: pointer;
 }

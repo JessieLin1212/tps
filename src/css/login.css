@@ -54,6 +54,7 @@
 }
 
 #login .login_user .login_form ul li .tishi {
+  display: none;
   text-align: left;
   color: #d22215;
   font-size: 12px;

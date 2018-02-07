@@ -50,7 +50,7 @@
                 }
             }
             ul{
-                min-height: 160px;
+                // min-height: 160px;
                 li{
                     border-bottom: solid 1px #ccc;
                     padding-left: 34px;
@@ -145,28 +145,63 @@
                                 opacity: .5;
                                 cursor: pointer;
                                 font-size: 19px;
+                                &:hover{
+                                    opacity: .9;
+                                }
                             }
                         }
                     }
                 }
             }
             .item_anniu{
-                height: 40px;
-                line-height: 40px;
-                border-bottom: solid 1px #ccc;
+                height: 42px;
+                line-height: 42px;
+                border-bottom: 1px dotted #ccc;
                 padding-left: 34px;
                 padding-right: 10px;
                 span{
                     display: inline-block;
-                    c
-                    &.car_list_name{
-                        padding-left: 20px;
+                    &.car_list_del,&.car_list_gz{
+                        cursor: pointer;
+                        &:hover{
+                            color: #E65051;
+                        }
                     }
-                    &.car_list_sx,&.car_list_cz,&.car_list_dj,&.car_list_qty,&.car_list_xj{
-                        text-align: center;
+                    &.car_list_gz{
+                        padding-left: 15px;
                     }
                 }
             }
+            .jiesuan_box{
+                padding: 10px;
+                border-bottom: dotted 1px #ccc;
+                .jiesuan{
+                    height: 174px;
+                    padding: 30px 20px;
+                    background: #fdfbf2;
+                    line-height: 1.8em;
+                    p{
+                        text-align: right;
+                        padding-bottom: 3px;
+                        &.all_price{
+                            color: #ff2f00;
+                            font-weight: bold;
+                            font-size: 16px;
+                            padding-bottom: 10px;
+                        }
+                    }
+                    .pay{
+                        float: right;
+                        background: #e61000;
+                        color: #fff;
+                        font-weight: bold;
+                        padding: .8% 4%;
+                        font-size: 14px;
+                        cursor: pointer;
+                    }
+                }
+            }
+            
         }
     }
 }
