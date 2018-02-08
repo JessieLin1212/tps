@@ -1,5 +1,11 @@
 
-document.addEventListener('DOMContentLoaded',function(){
+// document.addEventListener('DOMContentLoaded',function(){
+// (function(){
+
+require(['common'],function(){
+
+
+
 
 
     //吸顶菜单
@@ -102,6 +108,7 @@ document.addEventListener('DOMContentLoaded',function(){
 
 
 
+
     //返回顶部
 
     let toTop = document.querySelector('#to_top');
@@ -151,18 +158,18 @@ document.addEventListener('DOMContentLoaded',function(){
 
             clearInterval(item.timer);
 
-            // 获取当前li下的p元素
+            // 获取当前li下的.xinpin_neirong元素
             let xinpin_neirong = this.children[0].children[3];
 
             // 设置目标值
-            let target = -25;
+            let target = -30;
 
             item.timer = setInterval(()=>{
                 // 获取当前top值
                 let current = parseFloat(getComputedStyle(xinpin_neirong).top);
 
                 // 计算速度
-                let speed = Math.floor((target-current)/10);
+                let speed = Math.floor((target-current)/6);
 
                 // 改变top值
                 let top = current + speed;
@@ -184,7 +191,7 @@ document.addEventListener('DOMContentLoaded',function(){
 
             clearInterval(item.timer);
 
-            // 获取当前li下的p元素
+            // 获取当前li下的.xinpin_neirong元素
             let xinpin_neirong = this.children[0].children[3];
 
             // 设置目标值
@@ -196,7 +203,7 @@ document.addEventListener('DOMContentLoaded',function(){
                 let current = parseFloat(getComputedStyle(xinpin_neirong).top);
 
                 // 计算速度
-                let speed = Math.floor((target-current)/8);
+                let speed = Math.floor((target-current)/6);
 
                 // 改变top值
                 let top = current + speed;
@@ -206,7 +213,6 @@ document.addEventListener('DOMContentLoaded',function(){
 
                     // 改变目标值
                     top = target;
-                    xinpin_neirong.style.background = 'white';
                 }
 
                 xinpin_neirong.style.top = top + 'px';
@@ -218,82 +224,82 @@ document.addEventListener('DOMContentLoaded',function(){
 
     // 全球购图片上滑
 
-    // let quanqiugou_b = document.querySelector('.quanqiugou_b');
-    // let qqg_items = xinpin_b.querySelectorAll('li');
-    // // console.log(qqg_items);
+    let quanqiugou_b = document.querySelector('.quanqiugou_b');
+    let qqg_items = quanqiugou_b.querySelectorAll('a');
+    // console.log(qqg_items);
 
-    // for(let item of qqg_items){
+    for(let item of qqg_items){
 
-    //     item.onmouseenter = function(e){
+        item.onmouseenter = function(e){
 
-    //         clearInterval(item.timer);
+            clearInterval(item.timer);
 
-    //         // 获取当前li下的p元素
-    //         let qqg_img = this.children[0];
+            // 获取当前li下的.xinpin_neirong元素
+            let qqg_img = this;
 
-    //         // 设置目标值
-    //         let target = -30;
+            // 设置目标值
+            let target = -30;
 
-    //         item.timer = setInterval(()=>{
-    //             // 获取当前top值
-    //             let current = parseFloat(getComputedStyle(qqg_img).top);
+            item.timer = setInterval(()=>{
+                // 获取当前top值
+                let current = parseFloat(getComputedStyle(qqg_img).top);
 
-    //             // 计算速度
-    //             let speed = Math.floor((target-current)/10);
+                // 计算速度
+                let speed = Math.floor((target-current)/3);
 
-    //             // 改变top值
-    //             let top = current + speed;
+                // 改变top值
+                let top = current + speed;
 
-    //             if(top === target || speed === 0){
-    //                 clearInterval(item.timer);
+                if(top === target || speed === 0){
+                    clearInterval(item.timer);
 
-    //                 // 改变目标值
-    //                 top = target;
-    //             }
+                    // 改变目标值
+                    top = target;
+                }
 
-    //             qqg_img.style.top = top + 'px';
+                qqg_img.style.top = top + 'px';
 
-    //         },30)
-    //     }
+            },30)
+        }
 
-    //     // 鼠标移出
-    //     item.onmouseleave = function(e){
+        // 鼠标移出
+        item.onmouseleave = function(e){
 
-    //         clearInterval(item.timer);
+            clearInterval(item.timer);
 
-    //         // 获取当前li下的p元素
-    //         let qqg_img = this.children[0];
+            // 获取当前li下的.xinpin_neirong元素
+            let qqg_img = this;
 
-    //         // 设置目标值
-    //         let target = 0;
+            // 设置目标值
+            let target = 0;
 
-    //         item.timer = setInterval(()=>{
+            item.timer = setInterval(()=>{
 
-    //             // 获取当前top值
-    //             let current = parseFloat(getComputedStyle(qqg_img).top);
+                // 获取当前top值
+                let current = parseFloat(getComputedStyle(qqg_img).top);
 
-    //             // 计算速度
-    //             let speed = Math.floor((target-current)/8);
+                // 计算速度
+                let speed = Math.floor((target-current)/3);
 
-    //             // 改变top值
-    //             let top = current + speed;
+                // 改变top值
+                let top = current + speed;
 
-    //             if(top === target|| speed === 0){
-    //                 clearInterval(item.timer);
+                if(top === target|| speed === 0){
+                    clearInterval(item.timer);
 
-    //                 // 改变目标值
-    //                 top = target;
-    //                 qqg_img.style.background = 'white';
-    //             }
+                    // 改变目标值
+                    top = target;
+                }
 
-    //             qqg_img.style.top = top + 'px';
+                qqg_img.style.top = top + 'px';
 
-    //         },30);
-    //     }
-    // }
-
+            },30);
+        }
+    }
 
 
+
+// })();
 
 
 });

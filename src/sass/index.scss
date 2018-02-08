@@ -156,7 +156,7 @@
                             top:0px;
                             text-align: center;
                             margin: 0px auto;
-                            background-color: rgba(255,255,255,.8);
+                            background-color: rgba(255,255,255,.6);
                             h3{
                                 height: 40px;
                                 line-height: 21px;
@@ -362,6 +362,7 @@
                 li{
                     float: left;
                     width: 25%;
+                    position: relative;
                     // background: #58bc58;
                     &.li_row2{
                         margin-top: 70px;
@@ -374,6 +375,7 @@
                         background: url("../img/quanqiugou.png") no-repeat 0 0;
                         margin: 0 auto;
                         position: relative;
+                        // position: absolute;
                         top: 0px;
                     }
                 }

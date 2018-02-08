@@ -109,6 +109,6 @@
   text-decoration: underline;
 }
 
-#pageFooter #footer {
-  margin-top: 0px;
+#footer {
+  margin-top: 0px !important;
 }
