@@ -232,6 +232,7 @@
         }
     }
     .head_bottom_r{
+        display: block;
         float: right;
         // width: 124px;
         height: 44px;
@@ -407,6 +408,7 @@
                 position: absolute;
                 top:45px;
                 left:0px;
+                z-index: 10;
                 a{
                     height: 45px;
                     line-height: 45px;

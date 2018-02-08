@@ -5,8 +5,19 @@
     <title>详情页</title>
     <link rel="stylesheet" type="text/css" href="../css/base.css" />
     <link rel="stylesheet" type="text/css" href="../css/details.css" />
+    <script src="../lib/jquery-3.2.1.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        jQuery(function($){
+            // 加载头部
+            $('#pageHeader').load('header.html');
+
+            // 加载尾部
+            $('#pageFooter').load('footer.html');
+        });
+    </script>
 </head>
 <body>
+    <header id="pageHeader"></header>
     <div id="details">
         <div class="container clearfix">
             <div class="details_top">
@@ -331,7 +342,6 @@
                     </div>
                 </div>
             </div>
-
         </div>
 
         <!-- 返回顶部按钮 -->
@@ -346,5 +356,6 @@
         </div>
 
     </div>
+    <footer id="pageFooter"></footer>
 </body>
 </html>

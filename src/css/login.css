@@ -108,3 +108,7 @@
 #login .login_user .login_form ul li .go_dl a:hover {
   text-decoration: underline;
 }
+
+#pageFooter #footer {
+  margin-top: 0px;
+}

@@ -1,23 +1,70 @@
 .tps #banner {
-  width: 100%;
+  width: 1263px;
   height: 450px;
+  margin: 0 auto;
 }
 
 .tps #banner .banner_box {
-  width: 100%;
+  width: 1263px;
   height: 450px;
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto;
 }
 
 .tps #banner .banner_box ul {
-  width: 100%;
   height: 450px;
+  position: absolute;
+  overflow: hidden;
 }
 
 .tps #banner .banner_box ul li {
-  width: 100%;
+  width: 1263px;
   height: 450px;
-  background: url("../img/banner1.jpg") center center no-repeat #950a0d;
+  margin: 0 auto;
+  float: left;
   background-size: cover;
+  text-align: center;
+  cursor: pointer;
+}
+
+.tps #banner .banner_box ul li.banner1 {
+  background: url("../img/banner1.jpg") center center no-repeat #950a0d;
+}
+
+.tps #banner .banner_box ul li.banner2 {
+  background: url("../img/banner2.jpg") center center no-repeat #950a0d;
+}
+
+.tps #banner .banner_box ul li.banner3 {
+  background: url("../img/banner3.jpg") center center no-repeat #4badc9;
+}
+
+.tps #banner .banner_box .page {
+  position: absolute;
+  left: 50%;
+  margin-left: -61px;
+  bottom: 0;
+  padding: 10px;
+}
+
+.tps #banner .banner_box .page span {
+  display: inline-block;
+  margin: 0 5px;
+  width: 22px;
+  height: 22px;
+  line-height: 22px;
+  background: #D6D6D6;
+  color: #000;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 12px;
+  text-align: center;
+}
+
+.tps #banner .banner_box .page span.active {
+  background-color: rgba(0, 0, 0, 0.9);
+  color: #fff;
 }
 
 .tps #xinpin .xinpin_box {
@@ -121,16 +168,18 @@
 
 .tps #xinpin .xinpin_box .xinpin_b > li a .xinpin_neirong {
   padding: 2px 10px 0;
+  position: relative;
+  top: 0px;
   text-align: center;
   margin: 0px auto;
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 .tps #xinpin .xinpin_box .xinpin_b > li a .xinpin_neirong h3 {
   height: 40px;
-  line-height: 23px;
+  line-height: 21px;
   font-size: 14px;
   color: #555;
-  overflow: hidden;
 }
 
 .tps #xinpin .xinpin_box .xinpin_b > li a .xinpin_neirong .xinpin_price {
@@ -573,7 +622,7 @@
   height: 30px;
   position: fixed;
   top: 82%;
-  right: 0.2%;
+  right: 0.1%;
   background: rgba(7, 7, 7, 0.5);
   border-radius: 6px;
   text-align: center;

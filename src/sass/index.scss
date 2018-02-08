@@ -2,21 +2,64 @@
 .tps{
     // height: 16000px;
     #banner{
-        width: 100%;
+        width: 1263px;
         height: 450px;
+        margin: 0 auto;
         .banner_box{
-            width: 100%;
+            width: 1263px;
             height: 450px;
+            overflow: hidden;
+            position:relative;
+            margin: 0 auto;
             ul{
-                width: 100%;
+                // width: 100%;
+                // float: left;
                 height: 450px;
+                position:absolute;
+                overflow: hidden;
                 li{
-                    width: 100%;
+                    width: 1263px;
                     height: 450px;
-                    background: url("../img/banner1.jpg") center center no-repeat rgb(149, 10, 13);
+                    margin: 0 auto;
+                    float: left;
                     background-size: cover;
+                    text-align: center;
+                    cursor: pointer;
+                    &.banner1{
+                        background: url("../img/banner1.jpg") center center no-repeat rgb(149, 10, 13);
+                    }
+                    &.banner2{
+                        background: url("../img/banner2.jpg") center center no-repeat rgb(149, 10, 13);
+                    }
+                    &.banner3{
+                        background: url("../img/banner3.jpg") center center no-repeat rgb(75, 173, 201);
+                    }
                 }
             }
+            .page{
+                position:absolute;
+                left:50%;
+                margin-left: -61px;
+                bottom:0;
+                padding:10px;
+                span{
+                    display:inline-block;
+                    margin:0 5px;
+                    width:22px;
+                    height:22px;
+                    line-height:22px;
+                    background: #D6D6D6;
+                    color: #000;
+                    border-radius: 50%;
+                    cursor: pointer;
+                    font-size: 12px;
+                    text-align: center;
+                    &.active{
+                        background-color: rgba(0,0,0,.9);
+                        color: #fff;
+                    }
+                }
+            } 
         }
     }
 
@@ -109,14 +152,17 @@
                         }
                         .xinpin_neirong{
                             padding: 2px 10px 0;
+                            position: relative;
+                            top:0px;
                             text-align: center;
                             margin: 0px auto;
+                            background-color: rgba(255,255,255,.8);
                             h3{
                                 height: 40px;
-                                line-height: 23px;
+                                line-height: 21px;
                                 font-size: 14px;
                                 color: #555;
-                                overflow: hidden;
+                                // overflow: hidden;
                             }
                             .xinpin_price{
                                 height: auto;
@@ -534,7 +580,7 @@
         height: 30px;
         position: fixed;
         top: 82%;
-        right: 0.2%;
+        right: 0.1%;
         background: rgba(7,7,7,.5);
         border-radius:6px;
         text-align: center;

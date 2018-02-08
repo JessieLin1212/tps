@@ -247,6 +247,7 @@
 }
 
 #head_bottom .head_bottom_r {
+  display: block;
   float: right;
   height: 44px;
   line-height: 44px;
@@ -429,6 +430,7 @@
   position: absolute;
   top: 45px;
   left: 0px;
+  z-index: 10;
 }
 
 #nav .sc_nav > li ul a {

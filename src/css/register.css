@@ -63,6 +63,10 @@
   color: #ee4242;
 }
 
+#register .reg_phone .reg_mobile ul li .tishi_yes {
+  color: #58bc58;
+}
+
 #register .reg_phone .reg_mobile ul li #agree {
   width: 16px;
   height: 16px;
@@ -95,4 +99,8 @@
   display: block;
   margin-top: 10px;
   padding: 4px 0 4px 10px;
+}
+
+#pageFooter #footer {
+  margin-top: 0px;
 }
