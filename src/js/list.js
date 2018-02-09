@@ -53,14 +53,14 @@ require(['config'],function(){
                 let res = data.map(function(item){
 
                     return `<li data-id="${item.id}">
-                                <a href="">
+                                <a>
                                     <img src="${item.img}" alt="" />
                                     <p class="guoche_icon"><i class="iconfont icon-xiaohuoche"></i></p>
                                 </a>
                                 <div class="goods_xiangqi">
                                     <div class="good_jieshao">
                                         <p>
-                                            <a href="">${item.description}</a>
+                                            <a class="description">${item.description}</a>
                                         </p>
                                         <p class="goods_price">${item.price} </p>
                                     </div>
@@ -77,12 +77,53 @@ require(['config'],function(){
                 // console.log(res);
 
                $('.goods_ul').append(res);
-            }
-        })
 
+
+
+                //传参
+                $lis =$('.goods_box').find('ul');
+
+                $lis.on("click","li",function(){
+
+                    var params = '?';
+                    var imgurl = $(this).find("img").attr("src");
+                    var description = $(this).find(".description").text();
+                    var price = $(this).find(".goods_price").text();
+                    params += params + ( imgurl + description + price);
+                    // console.log(params);
+                    var obj = {}
+                    obj.imgurl = imgurl;
+                    obj.description = description;
+                    obj.price = price;
+                    // console.log(obj);
+
+                    //对象循环拼接成字符串
+                    var _params = '';
+                    for(var attr in obj){
+                        // console.log(obj[attr])
+                       _params += attr + '=' + obj[attr] + '&';
+                    }
+                    // console.log(_params);
+
+                    //去除多余的&        
+                    _params = _params.slice(0,-1);
+
+                    //跳转页面
+                    location.href = 'details.html?'+_params;
+
+                }) ;
+
+
+
+            }
+
+        });
+
+
+            
 
 
        
-    })
+    });
 
 });

@@ -43,10 +43,38 @@ require(['config'],function(){
         }
 
         // console.log($('.img_big'));
-        $('.img_big').gdsZoom({
-            position:'bottom'
-        })
+        // $('.img_big').gdsZoom({
+        //     position:'bottom'
+        // })
 
+
+        // 接收参数
+        var params = location.search.slice(1);
+        var img = document.querySelector('.img_big');
+        params = decodeURI(params);
+        params = params.split('&');
+        // console.log(params)
+
+        var data = {};
+        params.forEach(function(item){
+            var ss = item.split('=');
+            data[ss[0]] = ss[1];
+        });
+        // console.log(data);
+        //创建图片节点
+        var imgs = document.createElement('img');
+        imgs.src = data.imgurl;
+        // console.log(data.h3)
+        //将图片插入div中
+        img.appendChild(imgs);
+
+        //获取.details_title节点
+        var description = document.querySelector('.details_title');
+        description.innerHTML=data.description;
+        
+        // 获取价格节点
+        var price = document.querySelector('.details_price');
+        price.innerHTML =data.price; 
 
        
     })

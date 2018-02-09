@@ -106,6 +106,7 @@
   vertical-align: middle;
   text-align: center;
   position: relative;
+  cursor: pointer;
 }
 
 #list .goods_box .goods_ul li > a img {
