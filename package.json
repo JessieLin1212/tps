@@ -1,36 +1,27 @@
 {
-  "name": "git_module",
+  "name": "tps",
   "version": "1.0.0",
-  "description": "git与模块化开发",
-  "main": "index.js",
+  "description": "TPS全球购",
+  "main": "gulpfile.js",
   "directories": {
     "doc": "doc"
   },
   "dependencies": {
     "gulp": "^3.9.1",
-    "gulp-concat": "^2.6.1",
-    "gulp-rename": "^1.2.2",
-    "gulp-sass": "^3.1.0",
-    "gulp-uglify": "^3.0.0"
+    "gulp-sass": "^3.1.0"
   },
-  "devDependencies": {
-    "browser-sync": "^2.23.6"
-  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/aaron-xie/h5_1708.git"
+    "url": "git+https://github.com/JessieLin1212/tps.git"
   },
-  "keywords": [
-    "git",
-    "nodejs"
-  ],
-  "author": "laoxie",
+  "author": "JessieLin",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/aaron-xie/h5_1708/issues"
+    "url": "https://github.com/JessieLin1212/tps/issues"
   },
-  "homepage": "https://github.com/aaron-xie/h5_1708#readme"
+  "homepage": "https://github.com/JessieLin1212/tps#readme"
 }

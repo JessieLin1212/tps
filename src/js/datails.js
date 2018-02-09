@@ -41,6 +41,13 @@ require(['config'],function(){
                 window.scrollBy(0,-speed);
             },30);
         }
+
+        // console.log($('.img_big'));
+        $('.img_big').gdsZoom({
+            position:'bottom'
+        })
+
+
        
     })
 

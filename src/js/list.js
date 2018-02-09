@@ -41,6 +41,47 @@ require(['config'],function(){
                 window.scrollBy(0,-speed);
             },30);
         }
+
+
+        $.ajax({
+            url:'../api/list.php',
+            dataType:'json',
+            success:function(data){
+                // console.log(data);
+                // console.log($('.goods_ul'));
+
+                let res = data.map(function(item){
+
+                    return `<li data-id="${item.id}">
+                                <a href="">
+                                    <img src="${item.img}" alt="" />
+                                    <p class="guoche_icon"><i class="iconfont icon-xiaohuoche"></i></p>
+                                </a>
+                                <div class="goods_xiangqi">
+                                    <div class="good_jieshao">
+                                        <p>
+                                            <a href="">${item.description}</a>
+                                        </p>
+                                        <p class="goods_price">${item.price} </p>
+                                    </div>
+                                    
+                                    <div class="goods_guojia">
+                                        <i></i>
+                                        <p>中国</p>
+                                    </div>
+                                </div>
+                            </li>`
+
+                }).join('');
+
+                // console.log(res);
+
+               $('.goods_ul').append(res);
+            }
+        })
+
+
+
        
     })
 
