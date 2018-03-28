@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50714
 File Encoding         : 65001
 
-Date: 2018-02-09 16:39:59
+Date: 2018-03-28 19:49:02
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -118,19 +118,21 @@ INSERT INTO `qqqgoods` VALUES ('22', '依然花开 饰颜保湿粉底液 浅肤�
 -- ----------------------------
 DROP TABLE IF EXISTS `user`;
 CREATE TABLE `user` (
-  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
-  `phone` varchar(11) NOT NULL,
-  `password` varchar(20) NOT NULL,
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `username` varchar(255) NOT NULL,
+  `password` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=9 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of user
 -- ----------------------------
-INSERT INTO `user` VALUES ('1', '18783746784', 'as2345');
-INSERT INTO `user` VALUES ('2', '13516789765', 'aaaaaa23s');
-INSERT INTO `user` VALUES ('3', '13156783546', 'a274tgdv');
-INSERT INTO `user` VALUES ('4', '15572836543', 'bbscqwsd');
-INSERT INTO `user` VALUES ('5', '18217665337', 'abcdefg');
-INSERT INTO `user` VALUES ('6', '13927483672', 'abc123');
+INSERT INTO `user` VALUES ('1', 'Jessie', '114125972a5bcee8abfae03cfbd53f1b');
+INSERT INTO `user` VALUES ('2', '18228193849', '71b596cb42ee254f7416043d184fc970');
+INSERT INTO `user` VALUES ('3', '18228193222', '7fe6fdf7bcef97ba5894da8c33c3f2a7');
+INSERT INTO `user` VALUES ('4', '18228193111', 'cfc8f9956500ff6bddc783357f120232');
+INSERT INTO `user` VALUES ('5', '18228193166', '60694241c9657d0cae2b734e315280fe');
+INSERT INTO `user` VALUES ('6', '18228193155', 'ca80927d1e679e2b4de97c6474a5df56');
+INSERT INTO `user` VALUES ('7', '18217887665', '13b6862eba0acd7b13d84393746072e8');
+INSERT INTO `user` VALUES ('8', '18876787888', '48e1680d7a356395838dc1f0f1070fc0');
 SET FOREIGN_KEY_CHECKS=1;

@@ -1,39 +1,43 @@
 <?php
-    // 引入其他文件
+
+    // 引入其他connect.php文件(连接数据库)
     require('connect.php');
 
-    $username = isset($_GET['username']) ? $_GET['username'] : Null;
+    $username = isset($_GET['username']) ? $_GET['username'] : null;
+    $password = isset($_GET['password']) ? $_GET['password'] : null;
+    $type = isset($_GET['type']) ? $_GET['type'] : null;
 
-    $path = './data/reg.json';
+    // 查找数据库判断用户名是否存在
+    $sql = "select username from user where username='$username'";
 
-    $file = fopen($path,'r');
+    $result = $conn->query($sql);
 
-    $content = fread($file,filesize($path));
-
-    $arr_data = json_decode($content,true);
-
-    $sum = count($arr_data);
-
-    $arr = array();
-    
-    for($i=0;$i<$sum;$i++){
-        foreach($arr_data[$i] as $key=>$val){
-            if($key == 'phone'){
-                $arr[]=$val;
-            }  
-        }
-    }    
-    
-    // var_dump($arr);
-    if(in_array($username,$arr) && $username != ''){
-        echo "no";
-    }else if($username == ""){
-        echo "null";
+    if($result->num_rows>0){
+        echo "fail";
     }else{
-        echo "yes";
+
+        if($type === 'reg'){
+
+            // 加密密码
+            $password = md5($password);
+
+            // 注册（保存到数据库）
+            $sql = "insert into user(username,password) values('$username','$password')";
+
+            // 执行sql语句
+            $res = $conn->query($sql);
+
+            if($res){
+                echo "ok";
+            }else{
+                echo "error";
+            }
+            
+        }else{
+
+            echo "success";
+
+        }
     }
 
-    fclose($file);
-    
-    
 ?>

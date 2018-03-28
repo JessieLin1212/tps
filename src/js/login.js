@@ -4,15 +4,7 @@ require(['config'],function(){
     // 建议：有返回值的写前面
     require(['jquery','zoom'],function($,z){
 
-        var userName = document.querySelector("#userName");
-        var login_psd = document.querySelector("#login_psd");
-        var code = document.querySelector("#code");
-        var code_num = document.querySelector(".code_num");
-        var login_button = document.querySelector(".login_button");
-        var tishi = login_psd.nextElementSibling;
-        var code_tishi = code_num.nextElementSibling;
-        // console.log(tishi);  
-        
+        let code_tishi = $('.code_num').next()[0];
 
         // 生成验证码
         show();
@@ -28,73 +20,58 @@ require(['config'],function(){
                 res.push(randomNumber(0,9))
             }
             res = res.join('');
-            code_num.innerHTML = res;
+            $('.code_num')[0].innerHTML = res;
         }
-        code_num.onclick = function(){
+        $('.code_num').on('click',function(){
             show();
-        }
+        })
 
-
-
-        // 验证码验证
-        code.onblur = function(){
-            var _code = code.value;
-            if(_code != code_num.innerHTML){
-                show();
-                code_tishi.className = 'tishi';
-                code_tishi.innerText = "* 验证码不正确";
-            }else{
-                code_tishi.className = 'tishi_yes';
-                code_tishi.innerText = "验证码一致";
-            }
-        }
 
         // 验证用户名是否注册
-        $('#userName').on('blur',function(){
-            var _username = $('#userName').val();
+        $('.login_button').on('click',function(){
+            let _username = $('#userName').val();
+            let _password = $('#login_psd').val();
+            let tishi = $('#login_psd').next()[0];
+            // console.log(tishi);
             $.ajax({
                 url:'../api/login.php',
-                data:{username:_username},
-                success:function(data){
-                    if(data === 'fail'){
-                        // console.log('失败')
-                        tishi.className = 'tishi';
-                        tishi.innerHTML = "*用户名不可用";
-                        return;
-                    }
-                    tishi.className = 'tishi_yes';
-                    tishi.innerHTML = "用户名可用";
-                    // console.log(data);
-                }
-            })
-        })
-        
-        // 点击登录验证密码是否匹配
-        login_button.onclick = function(){
-            var _userName = userName.value;
-            var _userName = login_psd.value;
-            $.ajax({
-                url:'../api/loginsql.php',
                 data:{
-                    username:_userName,
-                    password:_userName
+                    username:_username,
+                    password:_password
                 },
                 success:function(data){
-                    if(data === 'fail' && tishi.className == 'tishi'){
+                    console.log(data);
+                    if(data === 'fail'){
+                        tishi.classList.remove('tishi_yes');
+                        tishi.classList.add('tishi');
+                        tishi.innerHTML = "用户名或密码错误";
+                    }else if(data === 'success'){
 
-                        tishi.innerText = "* 密码不正确";
+                        let _code = $('#code').val();
+                        if(_code != $('.code_num')[0].innerHTML){
+                            show();
+                            code_tishi.classList.remove('tishi_yes');
+                            code_tishi.classList.add('tishi');
+                            code_tishi.innerText = "* 验证码不正确";
+                        }else{
+                            code_tishi.classList.remove('tishi');
+                            code_tishi.classList.add('tishi_yes');
+                            code_tishi.innerText = "验证码一致";
 
-                        return;
-
-                    }else if(data === 'fail'){
-                        return;
+                            tishi.classList.remove('tishi');
+                            tishi.classList.add('tishi_yes');
+                            tishi.innerHTML = "用户名验证通过";
+                            alert('登陆成功！');
+                            window.location.href="../index.html";
+                        }
+                        
                     }
                     
-                    window.location.href="../index.html";
                 }
-            })
-        }
 
+            })
+
+        })
 
        
     })
