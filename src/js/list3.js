@@ -46,16 +46,10 @@ require(['config'],function(){
         auto_ajax();
 
         function auto_ajax(){
-            let _page = $('.fenye_active').text();
-            $('.goods_ul').html('');
+
             $.ajax({
                 url:'../api/list.php',
                 dataType:'json',
-                data:{
-                    type:'zonghe',
-                    page:_page,
-                    qty:18
-                },
                 success:function(data){
                     // console.log(data);
                     // console.log($('.goods_ul'));
@@ -72,7 +66,7 @@ require(['config'],function(){
                                             <p>
                                                 <a class="description">${item.description}</a>
                                             </p>
-                                            <p class="goods_price">¥<span class="goods_lx_jg">${item.price}</span></p>
+                                            <p class="goods_price">${item.price} </p>
                                         </div>
                                         
                                         <div class="goods_guojia">
@@ -95,7 +89,6 @@ require(['config'],function(){
         }
 
         $('.lx_zh').on('click',function(){
-            // console.log(666)
             auto_ajax();
         })
 
@@ -120,39 +113,16 @@ require(['config'],function(){
             }
         }
 
-
-        $goods_fenyes = $('.goods_fenye').find('span');
-        // console.log($goods_fenyes)
-        for(var i=0 ;i<$goods_fenyes.length;i++){
-            $goods_fenyes[i].idx = i;
-            $goods_fenyes[i].onclick = function(i){
-                // console.log(this.idx);
-                for(var i=0 ;i<$goods_fenyes.length;i++){
-                    $goods_fenyes[i].classList.remove('fenye_active');
-                }
-                this.classList.add('fenye_active');
-                let _page = $('.fenye_active').text();
-
-            }
-        }
-
-
-
         // 价格排序
         $('.lx_jg').on('click',function(){
-            let _page = $('.fenye_active').text();
-            $('.goods_ul').html('');
             console.log(this);
-            console.log(_page);
+
             $.ajax({
                 url:'../api/list.php',
                 dataType:'json',
-                data:{
-                    type:'price',
-                    page:_page,
-                    qty:18
-                },
                 success:function(data){
+                    // console.log(data);
+                    // console.log($('.goods_ul'));
 
                     let res = data.map(function(item){
 
@@ -166,7 +136,7 @@ require(['config'],function(){
                                             <p>
                                                 <a class="description">${item.description}</a>
                                             </p>
-                                            <p class="goods_price">¥<span class="goods_lx_jg">${item.price}</span></p>
+                                            <p class="goods_price">${item.price} </p>
                                         </div>
                                         
                                         <div class="goods_guojia">
@@ -190,7 +160,7 @@ require(['config'],function(){
 
             
         //传参
-        $lis =$('.goods_box').find('.goods_ul');
+        $lis =$('.goods_box').find('ul');
 
         $lis.on("click","li",function(){
 

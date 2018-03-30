@@ -193,34 +193,12 @@ require(['config'],function(){
         $lis =$('.goods_box').find('.goods_ul');
 
         $lis.on("click","li",function(){
-
-            var params = '?';
-            var imgurl = $(this).find("img").attr("src");
-            var description = $(this).find(".description").text();
-            var price = $(this).find(".goods_price").text();
-            params += params + ( imgurl + description + price);
-            // console.log(params);
-            var obj = {}
-            obj.imgurl = imgurl;
-            obj.description = description;
-            obj.price = price;
-            // console.log(obj);
-
-            //对象循环拼接成字符串
-            var _params = '';
-            for(var attr in obj){
-                // console.log(obj[attr])
-               _params += attr + '=' + obj[attr] + '&';
-            }
-            // console.log(_params);
-
-            //去除多余的&        
-            _params = _params.slice(0,-1);
-
-            //跳转页面
-            location.href = 'details.html?'+_params;
+            var params = this.getAttribute('data-id');
+            console.log(params);
+            location.href = 'details.html?' + params;
 
         }) ;
+
 
        
     });
