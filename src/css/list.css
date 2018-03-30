@@ -59,26 +59,29 @@
   color: #333;
 }
 
-#list .goods_box .paixu span {
+#list .goods_box .paixu .paixu_txt {
   display: inline-block;
   width: 60px;
   float: left;
   font-weight: 600;
+  height: 44px;
+  line-height: 44px;
 }
 
-#list .goods_box .paixu a {
+#list .goods_box .paixu span {
   padding: 3px 5px;
   margin: 0 5px;
   color: #777;
+  cursor: pointer;
 }
 
-#list .goods_box .paixu a i {
+#list .goods_box .paixu span i {
   font-size: 12px;
   margin-left: 6px;
   font-weight: bold;
 }
 
-#list .goods_box .paixu a.active, #list .goods_box .paixu a:hover {
+#list .goods_box .paixu span.active, #list .goods_box .paixu span:hover {
   color: #ee4242;
   border: 1px solid #ee4242;
   padding: 3px 4px;
@@ -199,13 +202,14 @@
   text-align: center;
 }
 
-#list .goods_box .goods_fenye ul li a {
+#list .goods_box .goods_fenye ul li span {
   padding: 3px 10px;
   border: 1px solid #ddd;
   color: #222;
+  cursor: pointer;
 }
 
-#list .goods_box .goods_fenye ul li a.fenye_active, #list .goods_box .goods_fenye ul li a:hover {
+#list .goods_box .goods_fenye ul li span.fenye_active, #list .goods_box .goods_fenye ul li span:hover {
   background: #ee4242;
   border: 1px solid #ee4242;
   color: #fff;
