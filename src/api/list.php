@@ -7,7 +7,7 @@
   // 获取前端数据
   $type = isset($_GET['type']) ? $_GET['type'] : null;
   $page = isset($_GET['page']) ? $_GET['page'] : 1;
-  $qty = isset($_GET['qty']) ? $_GET['qty'] : 18;
+  $qty = isset($_GET['qty']) ? $_GET['qty'] : 60;
 
   //获取查询结果集（集合）
   $idx = ($page-1)*$qty;

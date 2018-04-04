@@ -115,9 +115,9 @@ require(['config'],function(){
         // 增加数量
         $('.details_qty_more').on('click',function(){
             // console.log(666);
-            let details_qty = $('.details_qty').val()*1;
-            details_qty += 1;
-            $('.details_qty').val(details_qty);
+            let $details_qty = $('.details_qty').val()*1;
+            $details_qty += 1;
+            $('.details_qty').val($details_qty);
             // console.log($('.details_qty').val());
             
         })
@@ -125,9 +125,9 @@ require(['config'],function(){
         // 减少数量
         $('.details_qty_less').on('click',function(){
             // console.log(666);
-            let details_qty = $('.details_qty').val()*1;
-            details_qty -= 1;
-            $('.details_qty').val(details_qty);
+            let $details_qty = $('.details_qty').val()*1;
+            $details_qty -= 1;
+            $('.details_qty').val($details_qty);
             // console.log($('.details_qty').val());
         })
         
@@ -135,25 +135,25 @@ require(['config'],function(){
         $('.addToCar').on('click',function(){
           console.log(params);
 
-          let img = $('.img_active').find('img')[0].src;
+          let $img = $('.img_active').find('img')[0].src;
 
-          let description = $('.details_title').text();
+          let $description = $('.details_title').text();
           
-          let price = $('.details_price').text().slice(1);
+          let $price = $('.details_price').text().slice(1);
 
-          let qty = $('.details_qty').val();
-          console.log(qty);
+          let $qty = $('.details_qty').val();
+          console.log($qty);
           
-          let xiaoji = price*qty;
+          let xiaoji = $price*$qty;
 
           $.ajax({
               url:'../api/addcar.php',
               data:{
                   c_id:params,
-                  img:img,
-                  description:description,
-                  price:price,
-                  qty:qty,
+                  img:$img,
+                  description:$description,
+                  price:$price,
+                  qty:$qty,
                   xiaoji:xiaoji
               },
               dataType:'json',

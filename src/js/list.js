@@ -46,15 +46,15 @@ require(['config'],function(){
         auto_ajax();
 
         function auto_ajax(){
-            let _page = $('.fenye_active').text();
+            let $page = $('.fenye_active').text();
             $('.goods_ul').html('');
             $.ajax({
                 url:'../api/list.php',
                 dataType:'json',
                 data:{
                     type:'zonghe',
-                    page:_page,
-                    qty:18
+                    page:$page,
+                    qty:60
                 },
                 success:function(data){
                     // console.log(data);
@@ -107,7 +107,7 @@ require(['config'],function(){
         // })
 
     
-        $paixus = $('.paixu').find('span');
+        let $paixus = $('.paixu').find('span');
         // console.log($paixus)
         for(var i=0 ;i<$paixus.length;i++){
             $paixus[i].idx = i;
@@ -121,7 +121,7 @@ require(['config'],function(){
         }
 
 
-        $goods_fenyes = $('.goods_fenye').find('span');
+        let $goods_fenyes = $('.goods_fenye').find('span');
         // console.log($goods_fenyes)
         for(var i=0 ;i<$goods_fenyes.length;i++){
             $goods_fenyes[i].idx = i;
@@ -131,7 +131,7 @@ require(['config'],function(){
                     $goods_fenyes[i].classList.remove('fenye_active');
                 }
                 this.classList.add('fenye_active');
-                let _page = $('.fenye_active').text();
+                let $page = $('.fenye_active').text();
 
             }
         }
@@ -140,17 +140,17 @@ require(['config'],function(){
 
         // 价格排序
         $('.lx_jg').on('click',function(){
-            let _page = $('.fenye_active').text();
+            let $page = $('.fenye_active').text();
             $('.goods_ul').html('');
             console.log(this);
-            console.log(_page);
+            console.log($page);
             $.ajax({
                 url:'../api/list.php',
                 dataType:'json',
                 data:{
                     type:'price',
-                    page:_page,
-                    qty:18
+                    page:$page,
+                    qty:60
                 },
                 success:function(data){
 
@@ -190,10 +190,10 @@ require(['config'],function(){
 
             
         //传参
-        $lis =$('.goods_box').find('.goods_ul');
+        let $lis =$('.goods_box').find('.goods_ul');
 
         $lis.on("click","li",function(){
-            var params = this.getAttribute('data-id');
+            let params = this.getAttribute('data-id');
             console.log(params);
             location.href = 'details.html?' + params;
 

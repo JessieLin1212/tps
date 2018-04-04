@@ -298,6 +298,10 @@ require(['common'],function(){
     }
 
 
+    let fenlei = document.querySelector('.fenlei').children[1];
+    fenlei.onclick = function(){
+        location.href = '../html/list.html'
+    }
 
 // })();
 
